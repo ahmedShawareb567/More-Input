@@ -1,0 +1,75 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+@import "~bootstrap/scss/bootstrap.scss";
+
+@mixin all {
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font: normal 1rem sans-serif;
+}
+body {
+  @include all;
+  background-color: #d2fafb;
+  .addingItemsSec {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    text-align: center;
+    h2 {
+      display: inline-block;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      margin-top: 2rem;
+      padding: 1rem;
+    }
+    input {
+      display: block;
+      width: 50%;
+      height: 3rem;
+      border: 0.2rem solid #272343;
+      margin: 1rem auto;
+      padding-left: 1rem;
+      border-radius: 0.2rem;
+    }
+    span {
+      display: block;
+      margin: 0rem auto 1rem auto;
+      width: 50%;
+      height: 2.7rem;
+      overflow: auto;
+      li {
+        display: inline-block;
+        list-style-type: none;
+        font-size: 0.8rem;
+        margin-left: 0.5rem;
+        padding: 0.5rem;
+        background-color: #42dee1;
+        border-radius: 0.2rem;
+        margin-bottom: 0.5rem;
+        cursor: pointer;
+        i {
+          color: #cc0066;
+        }
+      }
+      &::-webkit-scrollbar {
+        width: 5px;
+      }
+      &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #ffcc00;
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background: rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}
